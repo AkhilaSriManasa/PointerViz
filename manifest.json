@@ -1,0 +1,14 @@
+{
+	"manifest_version":2,
+	"name": "PointerViz",
+	"description": "Dynamically visualize pointers as you type code",
+	"version": "1.0",
+
+	"permissions": ["activeTab"],
+
+	"content_scripts": [{
+		"matches" : ["https://ideone.com/*"],
+		"css": ["css/vis.min.css"],
+		"js": ["js/jquery-3.3.1.min.js", "js/vis.min.js", "pointerViz.js"]
+	}]
+}
